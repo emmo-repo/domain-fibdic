@@ -1,0 +1,609 @@
+@prefix : <http://emmo.info/emmo/domain/fibdic#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chameo: <http://emmo.info/emmo/domain/chameo/chameo#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://emmo.info/emmo/fibdic> .
+
+
+<http://emmo.info/emmo/domain/fibdic> rdf:type owl:Ontology ;
+                                        owl:imports <http://emmo.info/emmo/domain/chameo/chameo> ,
+                                                    <https://raw.githubusercontent.com/emmo-repo/EMMO/master/top/annotations.ttl> ;
+                                        <http://purl.org/dc/terms/abstract> "Focus Ion Beab - Digital Image Correlation ontology developed within the NanoMECommons project."@en ;
+                                        <http://purl.org/dc/terms/alternative> "FIB-DIC" ;
+                                        <http://purl.org/dc/terms/bibliographicCitation> "Work under review - not available yet" ;
+                                        <http://purl.org/dc/terms/contributor> "Goldbeck Consulting Ltd (UK)" ;
+                                        <http://purl.org/dc/terms/created> "2023-11-29" ;
+                                        <http://purl.org/dc/terms/creator> "Gerhard Goldbeck" ,
+                                                                           "Pierluigi Del Nostro" ;
+                                        <http://purl.org/dc/terms/description> "FIB-DIC ontology"@en ;
+                                        <http://purl.org/dc/terms/hasFormat> <https://www.w3.org/TR/turtle/> ;
+                                        <http://purl.org/dc/terms/identifier> "http://emmo.info/emmo/domain/fibdic" ;
+                                        <http://purl.org/dc/terms/issued> "" ;
+                                        <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                        <http://purl.org/dc/terms/modified> "2023-10-23T15:00:00Z" ;
+                                        <http://purl.org/dc/terms/publisher> "EMMC ASBL" ;
+                                        <http://purl.org/dc/terms/source> "" ;
+                                        <http://purl.org/dc/terms/title> "FIB-DIC Ontology"@en ;
+                                        <http://purl.org/ontology/bibo/doi> "" ;
+                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "fibdic"@en ;
+                                        <http://purl.org/vocab/vann/preferredNamespaceUri> "http://emmo.info/emmo/domain/chameo/chameo" ;
+                                        rdfs:comment """Contacts:
+													Gerhard Goldbeck
+													Goldbeck Consulting Ltd (UK)
+													email: gerhard@goldbeck-consulting.com"""@en ;
+                                        owl:backwardCompatibleWith "" ;
+                                        owl:priorVersion "" ;
+                                        owl:versionInfo "1.0.0-alpha1" ;
+                                        <http://www.w3.org/2004/02/skos/core#hiddenLabel> "FIB-DIC" ;
+                                        <http://xmlns.com/foaf/0.1/homepage> <https://github.com/pierluigidelnostro/domain-nanoindentation> ;
+                                        <http://xmlns.com/foaf/0.1/page> <https://github.com/pierluigidelnostro/domain-nanoindentation> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+
+#################################################################
+#    Classes
+#################################################################
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_0313f0da-0cd4-adfd-42bd-32af4a48
+:EMMO_0313f0da-0cd4-adfd-42bd-32af4a48 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#DataFiltering> ;
+                                       rdfs:label "AbsoluteDistancesFiltering"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "AbsoluteDistancesFiltering"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_07d5238a-4e64-905f-1478-04ad480e
+:EMMO_07d5238a-4e64-905f-1478-04ad480e rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#DataFiltering> ;
+                                       rdfs:label "StandardDeviationFiltering"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "StandardDeviationFiltering"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_0b43c1dc-77d0-1937-6588-c2db8225
+:EMMO_0b43c1dc-77d0-1937-6588-c2db8225 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo#EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Poisson's ratio is the ratio of transverse contraction strain to longitudinal extension strain in the direction of stretching force."@en ;
+                                       rdfs:label "PoissonsRatio"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "PoissonsRatio"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_1032e680-c8ae-e09e-9c58-f6a0bcba
+:EMMO_1032e680-c8ae-e09e-9c58-f6a0bcba rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#RawData> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """Is an image of a sample taken at high magnification. The image is produced by detecting the electrons that are emitted from the sample after it is irradiated with a beam of electrons.
+The set of images are used for DIC."""@en ;
+                                       rdfs:label "HRSEMImage"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "HRSEMImage"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_108dd401-d88b-c38d-15b6-ed509823
+:EMMO_108dd401-d88b-c38d-15b6-ed509823 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The milling direction is defined to milled a sahpe. As in the case of pillar milling can be performed from outer to inner diameter."^^xsd:string ;
+                                       rdfs:label "MillingDirection"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "MillingDirection"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_1b197482-9e63-d080-d105-0d5ce317
+:EMMO_1b197482-9e63-d080-d105-0d5ce317 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Dwell time\" means a time (ns to us) for an ion beam to stay per point during each milling step."@en ;
+                                       rdfs:label "DwellTime"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "DwellTime"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_1e6bafdd-e8de-4c3f-8d57-24ce66b5
+:EMMO_1e6bafdd-e8de-4c3f-8d57-24ce66b5 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#DataFiltering> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "ELUCIDATION???"@en ;
+                                       rdfs:label "MarkersFiltering"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "MarkersFiltering"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_20a3f6c3-ea78-5878-5949-3c236184
+:EMMO_20a3f6c3-ea78-5878-5949-3c236184 rdf:type owl:Class ;
+                                       rdfs:subClassOf :EMMO_a6774e21-f042-6c37-bfb1-9e5d43ed ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Is a type of gas that contains a combination of organic molecules and metal atoms. Exposed to the electron or ion beam undergo a cracking process in which the metal atom can be separated and deposited on a surface"@en ;
+                                       rdfs:label "OrganometallicGas"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "OrganometallicGas"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_215f5e52-4804-1b55-242e-efbc9b30
+:EMMO_215f5e52-4804-1b55-242e-efbc9b30 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "In automated milling procedure, positions are stored by milling a reference mark in order to keep the area of interest while changing between ion and electron beam during the experiment."@en ;
+                                       rdfs:label "ReferenceMarks"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ReferenceMarks"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_22a93f03-296f-58cf-2b3a-fcc1efc5
+:EMMO_22a93f03-296f-58cf-2b3a-fcc1efc5 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Is an imaging mode where the detector collects electrons over a period of time, typically milliseconds or seconds. The collected electrons are then integrated to produce a signal, this signal is then used to create an image of the sample. The integration scanning mode can help reduce image noise and improve the signal-to-noise ratio. It is useful for imaging samples with low electron emission or for imaging samples with large areas."@en ;
+                                       rdfs:label "IntegratedImaging"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#altLabel> "IntegrrationScanningMode"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "IntegratedImaging"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_29908106-ad0d-0a9a-b0a4-b820cdfb
+:EMMO_29908106-ad0d-0a9a-b0a4-b820cdfb rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The area on the sample where to perform pillar milling."@en ;
+                                       rdfs:label "TestLocation"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#altLabel> "SampleAreaOfIntrest"^^xsd:string ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "TestLocation"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_2a015a0c-302a-489e-4490-9c196b4b
+:EMMO_2a015a0c-302a-489e-4490-9c196b4b rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       rdfs:label "FIBDICProtocols"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "FIBDICProtocols"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_2a62e9af-f289-c018-c279-6dc61040
+:EMMO_2a62e9af-f289-c018-c279-6dc61040 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo/DataAnalysis> ;
+                                       rdfs:label "PrincipalResidualStress"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "PrincipalResidualStress"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_2e30f381-ee01-168e-af10-f65bb189
+:EMMO_2e30f381-ee01-168e-af10-f65bb189 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Is the ratio of the size of an object as seen through the microscope to its actual size. It is often measured in multiples of the size of an object."@en ;
+                                       rdfs:label "Magnification"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Magnification"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_41b93b28-e556-8201-4574-c57ee2a8
+:EMMO_41b93b28-e556-8201-4574-c57ee2a8 rdf:type owl:Class ;
+                                       rdfs:subClassOf :EMMO_2a015a0c-302a-489e-4490-9c196b4b ;
+                                       rdfs:label "HRSEMImaging"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "HRSEMImaging"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_43ebec07-8d01-bcac-ff1a-a29beee9
+:EMMO_43ebec07-8d01-bcac-ff1a-a29beee9 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The number of steps involve milling of the ring shape pillar at specific ion beam current and magnification to achvieve the required milling depth."@en ;
+                                       rdfs:label "MillingSteps"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "MillingSteps"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_4bddfb1c-6bfb-2349-bf86-f7420e61
+:EMMO_4bddfb1c-6bfb-2349-bf86-f7420e61 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo/DataAnalysis> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Is a mathematical representation of the deformation state of a material after the external loads have been removed."@en ;
+                                       rdfs:label "ResidualStrainTensor"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ResidualStrainTensor"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_4eef1494-04af-155d-da34-7d2b5901
+:EMMO_4eef1494-04af-155d-da34-7d2b5901 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameterAdjustment> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Drift is adjusted by applying the median filter and smoothing of the images"@en ;
+                                       rdfs:label "DriftAdjustment"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "DriftAdjustment"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_5a3130f7-5435-6829-6c10-5f674c9b
+:EMMO_5a3130f7-5435-6829-6c10-5f674c9b rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Is the voltage used to accelerate the ion beam towards the sample. This voltage can range from a few kilovolts to tens of kilovolts and it is used to control the energy of ions being directed towards the sample, which in turn affects the resolution of the imaging and the material removal rate."@en ;
+                                       rdfs:label "IonAccelerationVoltage"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "IonAccelerationVoltage"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_5c8caf81-75db-48a0-c9c6-b360ce1a
+:EMMO_5c8caf81-75db-48a0-c9c6-b360ce1a rdf:type owl:Class ;
+                                       rdfs:subClassOf :EMMO_2a015a0c-302a-489e-4490-9c196b4b ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "FIB calibration means to allign the lenses and optics, Adjust focus and stigmatism"@en ;
+                                       rdfs:label "FIBCalibration"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "FIBCalibration"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_5f7ab6a8-194b-51b7-981e-95d3f70a
+:EMMO_5f7ab6a8-194b-51b7-981e-95d3f70a rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo/DataAnalysis> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "FEM evaluated functions that compensate for incremental material removal during FIB-DIC data analysis of relaxation strains"@en ;
+                                       rdfs:label "CalibrationFunction"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "CalibrationFunction"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_64113b27-5dcc-6853-2aa5-5f558234
+:EMMO_64113b27-5dcc-6853-2aa5-5f558234 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameterAdjustment> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "By adjusting the parameters voltage and current for both Ion and Electron beam, respectively (Ion for pillar milling and Electron for HR-SEM imaging)."@en ;
+                                       rdfs:label "OptimisingParameters"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "OptimisingParameters"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_66b4aca0-ee0e-cd65-009b-e24e7f91
+:EMMO_66b4aca0-ee0e-cd65-009b-e24e7f91 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Small movements of the sample or the electron column during the imaging process can cause a shift in the position of the image. This can affect the accuracy and resolution of the image, especially in high magnification imaging. Drift can be caused by various factors such as thermal expansion, mechanical vibrations and instability in the sample's environment. It can be corrected by using drift correction software or by stabilizing the sample and the electron column."@en ;
+                                       rdfs:label "Drift"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Drift"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_6aefe433-a700-3135-6dd9-76d34aac
+:EMMO_6aefe433-a700-3135-6dd9-76d34aac rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo/DataAnalysis> ;
+                                       rdfs:label "FiniteElementModelling"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "FiniteElementModelling"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_6b90a25b-f2c6-4415-8c98-a6e2d281
+:EMMO_6b90a25b-f2c6-4415-8c98-a6e2d281 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo/DataAnalysis> ;
+                                       rdfs:label "CompressiveResidualStress"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "CompressiveResidualStress"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_710c2bbd-7785-53a7-11ef-dbb50c0a
+:EMMO_710c2bbd-7785-53a7-11ef-dbb50c0a rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A correlation grid is a pattern overlaid on an image used in DIC software to track small movements of a sample and determine displacement and strain."@en ;
+                                       rdfs:label "CorrelationGrid"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "CorrelationGrid"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_746d7bde-ee0a-4745-82ed-223c0eab
+:EMMO_746d7bde-ee0a-4745-82ed-223c0eab rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#SamplePreparation> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A few nanometres gold sputter coating is coated to achieve surface features for smooth surfaces, which is used for DIC analysis"@en ;
+                                       rdfs:label "SurfaceDecoration"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "SurfaceDecoration"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_74f912d5-8baa-8aa6-3484-a9532b66
+:EMMO_74f912d5-8baa-8aa6-3484-a9532b66 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#Detector> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A Continuous Dynode detector in a Scanning Electron Microscope (SEM) is a type of detector used to detect and measure secondary electrons (SEs) emitted from a sample. The detector uses a series of dynodes that are held at a high voltage potential to amplify the SE signal and produce an electrical signal, which is then used to create images of the sample surface. The continuous dynode detector provides high detection efficiency for SEs, which is useful for high resolution imaging."@en ;
+                                       rdfs:label "ContinuousDynode"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ContinuousDynode"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_75ae56cb-3bcd-25a4-1f61-ee84e438
+:EMMO_75ae56cb-3bcd-25a4-1f61-ee84e438 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#CharacterisationProperty> ;
+                                       rdfs:label "ResidualStress"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ResidualStress"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_77e722d9-a6f6-884b-1308-52ac7426
+:EMMO_77e722d9-a6f6-884b-1308-52ac7426 rdf:type owl:Class ;
+                                       rdfs:subClassOf :R6Wzwxxcsy0HQyp7Gfrnyq ;
+                                       rdfs:label "DoubleSlotFIB"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "DoubleSlotFIB"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_792409c4-9ff5-1237-be6b-780c33e7
+:EMMO_792409c4-9ff5-1237-be6b-780c33e7 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#RawData> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Is the final depth reach after the complete ring core milling experiment to determine the residual stresses at that depth."@en ;
+                                       rdfs:label "MillingDepth"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "MillingDepth"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_7a623a30-faae-2d04-f1f0-01f88d92
+:EMMO_7a623a30-faae-2d04-f1f0-01f88d92 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Is the amount of electric charge (measured in amperes) that flows through the electron beam in a given period of time, it's the flow of electrons in the beam. This current can range from a few picoamperes to several nanoamperes."@en ;
+                                       rdfs:label "ElectronBeamCurrent"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectronBeamCurrent"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_7b437fae-cfd7-ccf9-f468-a8ad01d3
+:EMMO_7b437fae-cfd7-ccf9-f468-a8ad01d3 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "HR-SEM images are acquired at different scan rotation (0, 45 and 90 degrees), at the end of the milling procedure."@en ;
+                                       rdfs:label "ScanRotation"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ScanRotation"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_7ba9a04b-ad5d-bb8f-46b5-8a3fb289
+:EMMO_7ba9a04b-ad5d-bb8f-46b5-8a3fb289 rdf:type owl:Class ;
+                                       rdfs:subClassOf :EMMO_95c56573-fb50-d06c-a3c3-9d94ae9f ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Is the change in strain of a material after it has been un-constrained for relaxation by material removal."@en ;
+                                       rdfs:label "RelaxationStrain"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "RelaxationStrain"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_84f484d0-722f-d154-aa0a-82b56993
+:EMMO_84f484d0-722f-d154-aa0a-82b56993 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Is the distance between the end of the objective lens and the sample surface. It can be adjusted to achieve the best resolution and working condition for the sample being examined. This distance can range from a few millimeters to several centimeters."@en ;
+                                       rdfs:label "WorkingDistance"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "WorkingDistance"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_87e68b86-10a6-ceb4-1372-2f896f2d
+:EMMO_87e68b86-10a6-ceb4-1372-2f896f2d rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Is the ring shape pillar milled to evaluate the relaxation strain in each milling step during the experiment"@en ;
+                                       rdfs:label "RingCoreShape"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "RingCoreShape"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_8a1afc4a-6198-f85c-e3fc-f1f4ecc2
+:EMMO_8a1afc4a-6198-f85c-e3fc-f1f4ecc2 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The sample stage is required to tilt at 52 degree to present the sample at normal incidence to the ion beam"@en ;
+                                       rdfs:label "TiltingAngle"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "TiltingAngle"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_91aeae0e-5913-c137-29fb-72a869e9
+:EMMO_91aeae0e-5913-c137-29fb-72a869e9 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The Inner diameter of the pillar to be milled"@en ;
+                                       rdfs:label "RingCoreInnerDiameter"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "RingCoreInnerDiameter"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_935a4c45-90a8-1f96-8f04-f5144177
+:EMMO_935a4c45-90a8-1f96-8f04-f5144177 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Deposit the platanium (Pt) dots on the area of interset where to perform pillar milling for alignment."@en ;
+                                       rdfs:label "AlignmentDots"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "AlignmentDots"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_95c56573-fb50-d06c-a3c3-9d94ae9f
+:EMMO_95c56573-fb50-d06c-a3c3-9d94ae9f rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementDataPostProcessing> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "It is a Matlab based software to evaluate the relaxation strains for each milling step by analysing the SEM images"@en ;
+                                       rdfs:label "DigitalImageCorrelation"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#altLabel> "DIC"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "DigitalImageCorrelation"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_9e26d3e7-3e43-3021-3e1e-bf92dc57
+:EMMO_9e26d3e7-3e43-3021-3e1e-bf92dc57 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo/DataAnalysis> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Is the relaxation strain sing-changed as it is converted to the strain corresponding to the elastic field that generates the residual stresses"@en ;
+                                       rdfs:label "ResidualStrain"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ResidualStrain"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_9f9d8b1a-3623-75dd-3208-2db19c85
+:EMMO_9f9d8b1a-3623-75dd-3208-2db19c85 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#DataFiltering> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Data filtering is the process of examining a dataset to exclude, rearrange, or apportion data according to certain criteria"@en ;
+                                       rdfs:label "RelativeToNeighbours"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "RelativeToNeighbours"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_a317715c-9d5e-ba62-29d9-7311c0c9
+:EMMO_a317715c-9d5e-ba62-29d9-7311c0c9 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The ion beam current in a Focused Ion Beam (FIB) is the flow rate of ions in the beam, it is measured in amperes and it can range from a few picoamperes to several nanoamperes. It controls the rate at which ions are directed towards the sample and affects the resolution of the imaging and the material removal rate."@en ;
+                                       rdfs:label "IonBeamCurrent"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "IonBeamCurrent"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_a5b2554e-f2ac-ee67-f31b-854cbcdf
+:EMMO_a5b2554e-f2ac-ee67-f31b-854cbcdf rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#SamplePreparation> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "In case of non-conductive samples, it should be glued with conductive silver (Ag) paste on aluminum stub for the better conductivity"@en ;
+                                       rdfs:label "SampleMounting"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "SampleMounting"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_a6774e21-f042-6c37-bfb1-9e5d43ed
+:EMMO_a6774e21-f042-6c37-bfb1-9e5d43ed rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#CharacterisationHardwareSpecification> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Elucidation?"@en ;
+                                       rdfs:label "HardwareControllingParameter"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "HardwareControllingParameter"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_aa5a39e3-bd53-1697-0621-8d8e03eb
+:EMMO_aa5a39e3-bd53-1697-0621-8d8e03eb rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "It is the required pillar diameter at the end of the experiment"@en ;
+                                       rdfs:label "PillarInnerDiameter"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "PillarInnerDiameter"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_aeb780be-abb7-0e13-8d45-ffac5228
+:EMMO_aeb780be-abb7-0e13-8d45-ffac5228 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The outer diameter from which the milliing starts towards the required pillar diameter"@en ;
+                                       rdfs:label "PillarOuterDiameter"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "PillarOuterDiameter"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_afa56f21-4a92-b347-1feb-fa5d4fae
+:EMMO_afa56f21-4a92-b347-1feb-fa5d4fae rdf:type owl:Class ;
+                                       rdfs:subClassOf :R6Wzwxxcsy0HQyp7Gfrnyq ;
+                                       rdfs:label "SlotFIB"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "SlotFIB"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_b283274e-bfcd-ba42-86dc-9562c1cf
+:EMMO_b283274e-bfcd-ba42-86dc-9562c1cf rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The correlation coefficient in a DIC software is a measure of the similarity between two images, it is a value between -1 and 1 that indicates the strength and direction of a linear relationship between two sets of data. In DIC, it is used to match the deformed and reference images, with a high correlation coefficient indicating a good match."@en ;
+                                       rdfs:label "CorrelationCoefficient"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "CorrelationCoefficient"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_b5c8b91b-f174-7925-2575-357cc4f2
+:EMMO_b5c8b91b-f174-7925-2575-357cc4f2 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#CharacterisationMethod> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The FIB-DIC (Focused Ion Beam - Digital Image Correlation) ring-core technique is a powerful method for measuring residual stresses in materials. It is based on milling a ring-shaped sample, or core, from the material of interest using a focused ion beam (FIB)."@en ;
+                                       rdfs:label "FIBDICResidualStressAnalysis"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "FIBDICResidualStressAnalysis"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_c78da8c9-9748-f1f9-3220-779e05e5
+:EMMO_c78da8c9-9748-f1f9-3220-779e05e5 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo/DataAnalysis> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Refers to the condition where a material is subjected to the same level of stress in all directions."@en ;
+                                       rdfs:label "EquiBiaxialStressState"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "EquiBiaxialStressState"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_ccaa5330-1413-bf98-2b5d-0ea52a2f
+:EMMO_ccaa5330-1413-bf98-2b5d-0ea52a2f rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#DataFiltering> ;
+                                       rdfs:label "PrincipalRelaxationStrain"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "PrincipalRelaxationStrain"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_d08862e0-b71e-0bf5-600e-78756524
+:EMMO_d08862e0-b71e-0bf5-600e-78756524 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo/DataAnalysis> ;
+                                       rdfs:label "TensileResidualStress"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "TensileResidualStress"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_d138f33e-9777-719d-b32c-f387a195
+:EMMO_d138f33e-9777-719d-b32c-f387a195 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#CharacterisationMeasurementProcess> ;
+                                       rdfs:label "FocusIonBeam"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#altLabel> "FIB"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "FocusIonBeam"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_d8b3e91a-21a9-233a-0c6a-80acb2a7
+:EMMO_d8b3e91a-21a9-233a-0c6a-80acb2a7 rdf:type owl:Class ;
+                                       rdfs:subClassOf :EMMO_2a015a0c-302a-489e-4490-9c196b4b ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "Measurement process"@en ;
+                                       rdfs:label "FIBMilling"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "FIBMilling"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_da8f89e3-d995-31f4-69a0-de868152
+:EMMO_da8f89e3-d995-31f4-69a0-de868152 rdf:type owl:Class ;
+                                       rdfs:subClassOf :R6Wzwxxcsy0HQyp7Gfrnyq ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "High resolution (below 10 nm) ring-core milling residual stress measuerments"@en ;
+                                       rdfs:label "RingCoreFIB"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "RingCoreFIB"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_dd4dd792-5482-ff33-8cfa-a5dcf41c
+:EMMO_dd4dd792-5482-ff33-8cfa-a5dcf41c rdf:type owl:Class ;
+                                       rdfs:subClassOf :EMMO_4bddfb1c-6bfb-2349-bf86-f7420e61 ;
+                                       rdfs:label "DeviatoricTensor"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "DeviatoricTensor"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_ddac99e3-8493-76c9-cea5-44088ad4
+:EMMO_ddac99e3-8493-76c9-cea5-44088ad4 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The Outer diameter of the pillar to be milled"@en ;
+                                       rdfs:label "RingCoreOuterDiameter"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "RingCoreOuterDiameter"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_df79ac4b-3772-1861-e9a1-fe6d86d2
+:EMMO_df79ac4b-3772-1861-e9a1-fe6d86d2 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#DataFiltering> ;
+                                       rdfs:label "PositionPlotFiltering"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "PositionPlotFiltering"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_e3999c6b-6339-b05f-fb1b-b95f606f
+:EMMO_e3999c6b-6339-b05f-fb1b-b95f606f rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#DataFiltering> ;
+                                       rdfs:label "AreaFiltering"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "AreaFiltering"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_e7bc3275-2c17-0b4f-0cbd-1cd74b03
+:EMMO_e7bc3275-2c17-0b4f-0cbd-1cd74b03 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo/DataAnalysis> ;
+                                       rdfs:label "MohrsCircle"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "MohrsCircle"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_ed4e4ce9-27ff-22ae-81ad-a9521c9b
+:EMMO_ed4e4ce9-27ff-22ae-81ad-a9521c9b rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo/DataAnalysis> ;
+                                       rdfs:label "AngleBetweenPrincipalComponents"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "AngleBetweenPrincipalComponents"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_f5e58d07-c63d-3a37-db9c-8f3fe860
+:EMMO_f5e58d07-c63d-3a37-db9c-8f3fe860 rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The electron beam acceleration voltage is the voltage used to accelerate the electrons in the electron gun to a high kinetic energy before they are focused and directed onto the sample"@en ;
+                                       rdfs:label "ElectronAcceralationVoltage"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectronAcceralationVoltage"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_f9d993be-d1be-fba9-002d-3ef563fa
+:EMMO_f9d993be-d1be-fba9-002d-3ef563fa rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#Detector> ;
+                                       <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The Everhart-Thornley detector (ETD) is a type of detector used in a Scanning Electron Microscope (SEM) to detect secondary electrons (SEs) emitted from the sample. It uses a scintillator to convert the electrons into light, which is then detected by a photomultiplier tube (PMT) to produce an electrical signal. The ETD provides a high detection efficiency for SEs, which can be used to create high-resolution images of the sample surface."@en ;
+                                       rdfs:label "EverhardAndThornley"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "EverhardAndThornley"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#EMMO_fae5a46a-d73b-4a3e-e579-e3a3a1e4
+:EMMO_fae5a46a-d73b-4a3e-e579-e3a3a1e4 rdf:type owl:Class ;
+                                       rdfs:subClassOf :EMMO_4bddfb1c-6bfb-2349-bf86-f7420e61 ;
+                                       rdfs:label "HydrostaticTensor"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "HydrostaticTensor"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#R6Wzwxxcsy0HQyp7Gfrnyq
+:R6Wzwxxcsy0HQyp7Gfrnyq rdf:type owl:Class ;
+                        rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                        rdfs:label "FIBMillingGeometry"@en ;
+                        <http://www.w3.org/2004/02/skos/core#prefLabel> "FIBMillingGeometry"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#R7gRyASIXrAGVIbeHsqsGo
+:R7gRyASIXrAGVIbeHsqsGo rdf:type owl:Class ;
+                        rdfs:subClassOf :R9AikCkPOGDNIL6iDn3w8Iw ;
+                        rdfs:label "SEMImagingFrames"@en ;
+                        <http://www.w3.org/2004/02/skos/core#prefLabel> "SEMImagingFrames"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#R9AikCkPOGDNIL6iDn3w8Iw
+:R9AikCkPOGDNIL6iDn3w8Iw rdf:type owl:Class ;
+                         rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo#MeasurementParameter> ;
+                         rdfs:label "SEMImagingParameters"@en ;
+                         <http://www.w3.org/2004/02/skos/core#prefLabel> "SEMImagingParameters"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#R9V6sWp3PY0jxXruG6Xotz8
+:R9V6sWp3PY0jxXruG6Xotz8 rdf:type owl:Class ;
+                         rdfs:subClassOf :R9AikCkPOGDNIL6iDn3w8Iw ;
+                         rdfs:label "SEMImagingResolution"@en ;
+                         <http://www.w3.org/2004/02/skos/core#prefLabel> "SEMImagingResolution"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#RCUoJngPtVZHN5XJdHWIfot
+:RCUoJngPtVZHN5XJdHWIfot rdf:type owl:Class ;
+                         rdfs:subClassOf :R9AikCkPOGDNIL6iDn3w8Iw ;
+                         rdfs:label "SEMImagesPerStep"@en ;
+                         <http://www.w3.org/2004/02/skos/core#prefLabel> "SEMImagesPerStep"@en .
+
+
+###  http://emmo.info/emmo/domain/fibdic#Rx20DJhXE8HYBqgRf8HQOo
+:Rx20DJhXE8HYBqgRf8HQOo rdf:type owl:Class ;
+                        rdfs:subClassOf <http://emmo.info/emmo/domain/chameo/chameo/DataAnalysis> ;
+                        rdfs:label "EigenStrainReconstruction"@en ;
+                        <http://www.w3.org/2004/02/skos/core#prefLabel> "EigenStrainReconstruction"@en .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
